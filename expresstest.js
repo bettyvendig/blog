@@ -9,7 +9,7 @@ mongoose.connect(dbURI,{useUnifiedTopology:true,useNewUrlParser:true})
 .then(function(result){
 	/*console.log(result);*/
 	console.log('connected to blogDB');
-	app.listen(3000);
+	app.listen(5000);
 }).catch(function(err){
 	/*console.log(err);*/
 	console.log('error connecting');
