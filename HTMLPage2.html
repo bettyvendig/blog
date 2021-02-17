@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+div#test2 {
+    margin:auto;
+    background:pink;
+}
+p#test2 {
+    display:inline;
+}
+</style>
+
+
+</head>
+<style>
+#test2 {
+    margin:auto auto;
+    display:inline-block;
+    font-size:3rem;
+}
+p {
+    display:inline;
+}
+</style>
+
+<body>
+<div id="main">
+    <div id="test1">
+    <p> this is a pararaph </p>
+    </div>
+    <div id="test2">
+    <p>this is paragraph2</p>
+    </div>
+
+    </div id="test23">
+    <p>this is idtest23</p></div>
+
+
+</div>
+<div id="test2">paragreaph test2</div>
+<div class="test3">this is test3</div>
+<div class="test3">this is also test 3</div>
+
+
+
+<script>
+var a = document.getElementById("test1");
+console.log(a);
+console.log('ainner',a.innerHTML);
+var b = document.getElementById("test2");
+a.innerHTML = b.innerHTML;
+console.log('b',b);
+var c = document.getElementById('main');
+c.innerHTML = b;
+console.log('maininner',c.innerHTML);
+jQuery("#main").html(b);
+var d = jQuery("#main");
+console.log('main',d);
+$(".test3").css('background','green');
+$("#test2").hover(function(){
+    console.log('est2');
+    $("#test2").css('background','red');
+});
+
+
+
+</script>  
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	background:pink;
+}
+li a{
+		color:blue;
+	}
+	h2 {
+		color: red;
+	}
+	p {
+		color: green;
+	}
+	nav {
+		/*display: flex;
+		justify-content: space-between;
+		align-items:flex-end;
+		flex-direction: row;*/
+	}
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+		align-self: flex-end;
+		flex-direction: row;
+	}
+	ul a {
+		list-style-type: none;
+	}
+	ul {
+		list-style-type: none !important;
+	}
+	input {
+		width:100%;
+	}
+	textarea {
+		height:120px;
+		width:100%;
+
+	}

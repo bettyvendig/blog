@@ -1,0 +1,26 @@
+<%- include('./partials/head.ejs') %>
+<body>
+	
+	<h1><%= title %></h1>
+	<%- include('./partials/nav.ejs') %>
+	<div class="blogscontent">
+		<h2>all blogs</h2>
+		<% if(blogs.length > 0) { %>
+			<% blogs.forEach(function(blog) { %>
+
+			<a class="single" href="/blogs/<%= blog.id %>"
+				<h3 <%= blog.title %></h3>
+				<p><%= blog.snippet %></p>
+			</a>
+			<% }) %>
+	
+		<% } else { %>
+			<p>there are no blogs</p>
+		<% } %>
+
+		<% var a = [1,2,3] %>
+		<% for (var aa in a) { %>
+			<p><%= a[aa] %></p>
+		<% } %>
+	</div>
+<%- include('./partials/foot.ejs') %>
