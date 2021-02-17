@@ -5,7 +5,7 @@ const Blog = require('./models/blog');
 //const dbURI = 'mongodb+srv://betty:<password>@cluster0.cc5l9.mongodb.net/<dbname>?retryWrites=true&w=majority'
 const app = express();
 const dbURI = 'mongodb+srv://betty:BBue123456@cluster0.cc5l9.mongodb.net/blogsDG?retryWrites=true&w=majority'
-mongoose.connect(dbURI,useUnifiedTopology:true,useNewUrlParser:true)
+mongoose.connect(dbURI,{useUnifiedTopology:true,useNewUrlParser:true})
 .then(function(result){
 	/*console.log(result);*/
 	console.log('connected to blogDB');
